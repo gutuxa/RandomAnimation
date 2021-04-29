@@ -41,8 +41,8 @@ class AnimationDataManager {
         "easeOut",
         "easeInOut"
     ]
-    let durationBounds = [0.5, 2]
-    let delayBounds = [0, 0.5]
+    let durationRange = (min: 0.5, max: 2.0)
+    let delayRange = (min: 0.0, max: 0.5)
     
     static let shared = AnimationDataManager()
     

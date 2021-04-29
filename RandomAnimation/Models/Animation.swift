@@ -24,8 +24,8 @@ extension Animation {
         return Animation(
             name: shared.names.randomElement() ?? "",
             curve: shared.curves.randomElement() ?? "",
-            duration: Double.random(in: (shared.durationBounds.first ?? 1)...(shared.durationBounds.last ?? 1)),
-            delay: Double.random(in: (shared.delayBounds.first ?? 0)...(shared.delayBounds.last ?? 0))
+            duration: Double.random(in: shared.durationRange.min...shared.durationRange.max),
+            delay: Double.random(in: shared.delayRange.min...shared.delayRange.max)
         )
     }
 }
